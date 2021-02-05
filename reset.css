@@ -1,17 +1,4 @@
 /********************************************
-*          RESET CSS AGENT PROPERTIES       *
-*********************************************/
-*, ::before, ::after {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-a {
-    text-decoration: none;
-    color: inherit;
-}
-/********************************************
 *            ERIC MEYER'S RESET             *
 *********************************************/
 html, body, div, span, applet, object, iframe,
@@ -56,4 +43,8 @@ q:before, q:after {
 table {
     border-collapse: collapse;
     border-spacing: 0;
+}
+
+a {
+    text-decoration: none;
 }
