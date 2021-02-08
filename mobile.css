@@ -20,6 +20,7 @@ body {
 
 #logo {
     padding-left: 4rem;
+    width: 60%;
 }
 
 strong {
@@ -44,13 +45,20 @@ nav li {
     text-align: center;
 }
 
-.login {
+nav li:first-child(1):hover {
+    border-bottom: 5px solid #106FFC;
+    padding-top: 3rem;}
+
+.sign-in {
     grid-column: 2/3;
     grid-row: 1/2;
     text-align: right;
     padding-right: 4rem;
-    color: #106FFC !important;
-    font-weight: 1000 !important;
+    font-family: "Raleway Bold", sans-serif;
+}
+
+.sign-in a {
+color: #106FFC;
 }
 
 nav a {
@@ -60,13 +68,17 @@ nav a {
     color: black;
 }
 
+nav a:hover {
+    color: #106FFC;
+}
+
 .unset {
     max-height: 100px;
 }
 
 header h1 {
     font-size: 3rem;
-    font-family: 'Raleway Bold';
+    font-family: 'Raleway Bold', sans-serif;
     margin : 5rem 0 3rem 0;
     padding-left: 4rem;
     padding-right: 4rem;
@@ -81,20 +93,76 @@ header p {
 }
 
 #search-bar {
-    width: 90%;
+    display: flex;
     margin: auto;
     justify-content: center;
-    display: flex;
+    align-items: center;
 }
 
 #search-bar input {
     border: 1px solid #f2f2f2;
-    width: 100%;
-    font-size: 15px;
-    text-align: center;
-    height: 100%;}
+    font-family: "Raleway Bold", sans-serif;
+    font-size: 3rem;
+    height: 8rem;
+    padding-left: 3%;
+    padding-right: 14%;
+}
+
+.fa-money-bill-wave, .fa-child, .fa-heart, .fa-dog {
+    background-color: #DEEBFF;
+    color: #106FFC;
+    border-radius: 5rem;
+    padding: 2.6rem ;
+    margin-left: -10%;
+}
+
+.eco, .familial, .romantic, .pet-welcome {
+    padding: 2rem;
+}
+
+button {
+    background-color: #fff;
+    border-radius: 4rem 4rem 4rem 4rem;
+    border: 5px solid #D9D9D9;
+    font-family: 'Raleway Bold', sans-serif;
+    margin-bottom: 2rem;
+    margin-right: 2rem;
+
+}
 
 
+
+
+#search-bar i {
+    font-size: 3rem;
+    align-self: center;
+    margin: auto;
+}
+
+.gps-locator {
+    background-color: #F2F2F2;
+    border: 1px solid #f2f2f2;
+    width: 8rem;
+    height: 8rem;
+    border-radius: 2rem 0 0 2rem;
+    display: flex;
+}
+
+.search-button {
+    background-color: #106FFC;
+    border: 1px solid #106FFC;
+    width: 8rem;
+    height: 8rem;
+    border-radius: 2rem 2rem 2rem 2rem;
+    display: flex;
+}
+
+.search-button i {
+    font-size: 3rem;
+    align-self: center;
+    color: #fff;
+    margin: auto;
+}
 
 #filters {
     margin : 5rem 0 3rem 0;
@@ -102,8 +170,14 @@ header p {
     padding-right: 4rem;
 }
 
-#filters p {
-    font-size: 1rem;
+#filters h2 {
+    font-family: "Raleway Bold", sans-serif;
+    font-size: 1.4rem;
+    margin-bottom: 4%;
+}
+
+#filters button {
+    font-size: 3rem;
 }
 
 .fa-info {
@@ -131,41 +205,46 @@ article {
 }
 
 .popular h2 {
-    font-family: "Raleway Bold";
+    font-family: "Raleway Bold", sans-serif;
     margin-left: 4rem;
-    font-size: 1.3rem;
+    font-size: 4rem;
 }
 
 .popular i {
     grid-column: 2/3;
     text-align: right;
-    padding-right: 3rem;
+    font-size: 4rem;
+    padding-right: 4rem;
 }
 
 .popular-title {
     display: grid;
-    align-items: baseline;
+    align-items: center;
     grid-template: 6rem /3fr 1fr;
-    margin-top: 10%;
+    margin-top: 9%;
+    margin-bottom: 6%;
+
 
 }
 
 .card {
     position: relative;
-    box-shadow: 0px 1px 30px 0px #D9D9D9;
+    box-shadow: 0 1px 20px #D9D9D9;
     background-color: white;
     border-radius: 19px;
     height: auto;
     width: 85%;
-    margin: auto;
+    margin-right: auto;
+    margin-left: auto ;
+    margin-bottom: 3%;
     padding: 1%;
     display: flex;
     flex-direction: row;
-    margin-bottom: 3%;
+
 }
 
 .card-img  {
-    border-radius: 15px 0px 0 15px;
+    border-radius: 15px 0 0 15px;
     height: 27rem;
     object-fit: cover;
     max-width: 100%;
@@ -184,7 +263,7 @@ article {
 
 .description h3 {
     font-size: 3.5rem;
-    font-family: "Raleway Bold";
+    font-family: "Raleway Bold", sans-serif;
     line-height: 1.1;
 }
 
@@ -210,4 +289,107 @@ article {
 
 .empty {
     color: #D9D9D9;
+}
+
+.card-home h2 {
+    font-family: "Raleway Bold", sans-serif;
+    font-size: 4rem;
+    margin-top: 9%;
+    margin-bottom: 6%;
+    padding-left: 4rem;
+}
+
+.card2 {
+    box-shadow: 0 1px 20px #D9D9D9;
+    background-color: white;
+    border-radius: 35px;
+    width: 85%;
+    margin-right: auto;
+    margin-left: auto ;
+    margin-bottom: 3%;
+    padding: 1%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.card2-img {
+    width: 100%;
+    border-radius: 30px 30px 0 0;
+    height: 22rem;
+    object-fit: cover;
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.load-more {
+    font-family: "Raleway Bold", sans-serif;
+    font-size: 3rem;
+    padding-top: 3%;
+    padding-left: 4rem;
+    color: black;
+}
+
+aside h2 {
+    font-family: "Raleway Bold", sans-serif;
+    font-size: 4rem;
+    margin-top: 9%;
+    margin-bottom: 6%;
+    padding-left: 4rem;
+}
+
+aside figure {
+    box-shadow: 0 1px 10px #D9D9D9;
+    background-color: white;
+    border-radius: 35px;
+    width: 85%;
+    margin-right: auto;
+    margin-left: auto ;
+    margin-bottom: 3%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+aside figure img {
+    width: 100%;
+    border-radius: 30px 30px 0 0;
+    height: 25rem;
+    object-fit: cover;
+    max-width: 100%;
+    max-height: 100%;
+}
+
+aside figcaption {
+    font-family: "Raleway Bold", sans-serif;
+    padding: 6%;
+    font-size: 2.8rem;
+    color: black;
+}
+
+footer {
+    background-color: #F2F2F2;
+    padding-left: 4rem;
+}
+
+footer a:hover {
+    color: #106FFC;
+}
+
+.footer-title {
+    font-family: "Raleway Bold", sans-serif;
+    font-size: 1.4rem;
+    padding-top: 10%;
+}
+
+footer li {
+    line-height: 2;
+}
+
+footer li:first-child {
+    padding-top: 5%;
+}
+
+.last-item {
+    padding-bottom: 10%;
 }
