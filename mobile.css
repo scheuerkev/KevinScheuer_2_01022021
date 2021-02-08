@@ -16,6 +16,8 @@ body {
 
 :root {
     font-size: 14px;
+    --primary_blue: #106FFC;
+    --secondary_blue: #DEEBFF;
 }
 
 #logo {
@@ -58,7 +60,7 @@ nav li:first-child(1):hover {
 }
 
 .sign-in a {
-color: #106FFC;
+color: var(--primary);
 }
 
 nav a {
@@ -109,8 +111,8 @@ header p {
 }
 
 .fa-money-bill-wave, .fa-child, .fa-heart, .fa-dog {
-    background-color: #DEEBFF;
-    color: #106FFC;
+    background-color: var(--secondary_blue);
+    color: var(--primary_blue);
     border-radius: 5rem;
     padding: 2.6rem ;
     margin-left: -10%;
@@ -129,9 +131,6 @@ button {
     margin-right: 2rem;
 
 }
-
-
-
 
 #search-bar i {
     font-size: 3rem;
@@ -275,7 +274,7 @@ article {
 .stars {
     padding-right: 0;
     font-size: 2rem;
-    color: #0065FC;
+    color: var(--primary_blue);
     width: 50%;
     display: flex;
     flex-direction: row;
