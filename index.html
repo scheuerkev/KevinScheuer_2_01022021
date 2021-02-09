@@ -17,33 +17,38 @@
 <header>
     <nav>
         <ul>
-            <a href="index.html"><img id="logo" src="images/logo/Reservia@3x.png" alt="Logo de Reservia"/></a>
+            <li><a href="index.html"><img id="logo" src="images/logo/Reservia@3x.png" alt="Logo de Reservia"/></a></li>
             <li class="places"><a href="#">Hébergements</a></li>
             <li class="activities"><a href="#">Activités</a></li>
             <li class="sign-in"><a href="#">S'inscrire</a></li>
         </ul>
     </nav>
     <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
-    <p>En plein centre ville ou en pleine nature</p>
+    <p class="slug">En plein centre ville ou en pleine nature</p>
     <form method="post">
         <div id="search-bar">
-                <span class="gps-locator">
+            <label class="gps-locator">
                 <i class="fas fa-map-marker-alt"></i>
-                </span>
+            </label>
             <input type="text" value="Marseille, France"/>
-            <span class="search-button">
+            <button class="search-button">
                 <i class="fas fa-search"></i>
-            </span>
+            </button>
         </div>
         <div id="filters">
             <h2>Filtres</h2>
-            <button><i class="fas fa-money-bill-wave"></i><span class="eco">Économique</span></button>
-            <button><i class="fas fa-child"></i><span class="familial">Familial</span></button>
-            <button><i class="fas fa-heart"></i><span class="romantic">Romantique</span></button>
-            <button><i class="fas fa-dog"></i><span class="pet-welcome">Animaux autorisés</span></button>
+            <button class="eco-button"><i class="fas fa-money-bill-wave"></i><span class="eco">Économique</span>
+            </button>
+            <button class="familial-button"><i class="fas fa-child"></i><span class="familial">Familial</span></button>
+            <button class="romantic-button"><i class="fas fa-heart"></i><span class="romantic">Romantique</span>
+            </button>
+            <button class="pet-welcome-button"><i class="fas fa-dog"></i><span
+                    class="pet-welcome">Animaux autorisés</span></button>
         </div>
-        <i class="fas fa-info"></i>
-        <p>Plus de 500 logements sont disponibles dans cette ville</p>
+        <div id="search-results">
+            <i class="fas fa-info"></i>
+            <p>Plus de 500 logements sont disponibles dans cette ville</p>
+        </div>
     </form>
 </header>
 <!--MAIN-->
@@ -302,3 +307,4 @@
 </footer>
 </body>
 </html>
+
