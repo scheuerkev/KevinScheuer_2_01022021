@@ -33,6 +33,7 @@ nav ul {
     align-items: center;
     border-bottom: 5px solid var(--primary_gray);
     padding-top: 30px;
+    font-size: 1.5rem;
 }
 
 nav li:first-child {
@@ -56,12 +57,10 @@ nav li { text-align: center; }
 
 .sign-in a {
     color: var(--primary_blue);
-    font-size: 1.4rem;
 }
 
 nav a {
     text-decoration: none;
-    font-size: 1.4rem;
     font-weight: 600;
     color: #000;
 }
