@@ -20,6 +20,8 @@
 
 body { font-family: Raleway, serif; }
 
+h1, h2, h3 { font-family: "Raleway Bold", sans-serif; }
+
 /*\\\MOBILE_STYLE///*/
 /*HEADER*/
 #logo {
@@ -91,7 +93,6 @@ nav a:hover { color: var(--primary_blue); }
 
 header h1 {
     font-size: 2.2rem;
-    font-family: 'Raleway Bold', sans-serif;
     padding: 15px 25px 0;
     line-height: 1.3;
 }
@@ -154,48 +155,53 @@ form button {
 .eco-button i, .familial-button i, .romantic-button i, .pet-welcome-button i {
     background-color: var(--secondary_blue);
     color: var(--primary_blue);
-    width: 60px;
-    height: 60px;
+    width: 50px;
+    height: 50px;
     border-radius: 50%;
-    line-height: 60px;
-    margin: -15px;
+    line-height: 50px;
+    margin: -12px;
 }
 
-.eco, .familial, .romantic, .pet-welcome { padding: 2rem; }
+.eco, .familial, .romantic, .pet-welcome {
+    padding: 20px;
+    padding-right: 0;
+}
 
 #filters h2 {
-    font-family: "Raleway Bold", sans-serif;
-    font-size: 2rem;
-    padding-top: 35px;
+    font-size: 1.8rem;
+    padding-top: 25px;
 }
 
 #filters button {
-    font-size: 1rem;
+    font-size: 1.6rem;
     padding: 10px;
-    padding-right: 30px;
-    margin: 15px;
+    margin: 8px;
     margin-left: 0;
 }
 
 #search-results {
-    margin-top: 70px;
+    margin-top: 20px;
     display: flex;
 }
 
 #search-results i {
     color: var(--primary_blue);
-    width: 85px;
-    height: 65px;
-    line-height: 65px;
+    width: 25px;
+    height: 25px;
+    max-width: 25px;
+    max-height: 25px;
+    min-width: 25px;
+    min-height: 25px;
+    line-height: 25px;
     border-radius: 50%;
     text-align: center;
-    border: 2px solid var(--secondary_gray);
+    border: 1px solid var(--secondary_gray);
     font-size: 1rem;
 }
 
 #search-results p {
-    font-size: 1rem;
-    padding: 30px;
+    font-size: 1.5rem;
+    padding: 10px;
     padding-top: 0;
 }
 
@@ -205,27 +211,20 @@ article {
     flex-direction: column-reverse;
 }
 
-.popular { background-color: var(--primary_gray); }
-
-.popular h2 {
-    font-family: "Raleway Bold", sans-serif;
-    margin-left: 1rem;
-    font-size: 1rem;
+section { padding: 30px;
 }
 
-.popular i {
-    grid-column: 2/3;
-    text-align: right;
-    font-size: 1rem;
-    padding-right: 1rem;
+.popular {
+    background-color: var(--primary_gray);
+    padding: 30px;
 }
 
 .popular-title {
-    display: grid;
+    display: flex;
     align-items: center;
-    grid-template: 1rem /3fr 1fr;
-    margin-top: 9%;
-    margin-bottom: 6%;
+    justify-content: space-between;
+    font-size: 2rem;
+    padding-bottom: 20px;
 }
 
 .card {
@@ -233,19 +232,15 @@ article {
     box-shadow: 0 1px 20px var(--secondary_gray);
     background-color: #fff;
     border-radius: 19px;
-    height: auto;
-    width: 85%;
-    margin-right: auto;
-    margin-left: auto;
-    margin-bottom: 3%;
-    padding: 1%;
+    margin-bottom: 10px;
+    padding: 5px;
     display: flex;
     flex-direction: row;
 }
 
 .card-img {
     border-radius: 15px 0 0 15px;
-    height: 27rem;
+    height: 140px;
     object-fit: cover;
     max-width: 100%;
     max-height: 100%;
@@ -262,36 +257,33 @@ article {
 }
 
 .description h3 {
-    font-size: 3.5rem;
-    font-family: "Raleway Bold", sans-serif;
-    line-height: 1.1;
+    font-size: 1.6rem;
+    line-height: 1.4;
 }
 
 .description p {
-    padding-top: 3%;
-    font-size: 2.8rem;
+    font-size: 1.5rem;
 }
 
 .stars {
     padding-right: 0;
-    font-size: 1rem;
+    font-size: 1.2rem;
     color: var(--primary_blue);
     width: 50%;
     display: flex;
     flex-direction: row;
     margin-top: auto;
-    margin-bottom: 5%;
+    margin-bottom: 10px;
 }
 
-.stars i { padding-right: 2%; }
+.stars i { padding-right: 1px; }
 
 .empty {
     color: var(--secondary_gray);
 }
 
-.card-home h2 {
-    font-family: "Raleway Bold", sans-serif;
-    font-size: 1rem;
+.card-home h1 {
+    font-size: 2.2rem;
     margin-top: 9%;
     margin-bottom: 6%;
     padding-left: 1rem;
@@ -301,11 +293,8 @@ article {
     box-shadow: 0 1px 20px var(--secondary_gray);
     background-color: #fff;
     border-radius: 35px;
-    width: 85%;
-    margin-right: auto;
-    margin-left: auto;
     margin-bottom: 3%;
-    padding: 1%;
+    padding: 5px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -314,7 +303,7 @@ article {
 .card2-img {
     width: 100%;
     border-radius: 30px 30px 0 0;
-    height: 22rem;
+    height: 110px;
     object-fit: cover;
     max-width: 100%;
     max-height: 100%;
