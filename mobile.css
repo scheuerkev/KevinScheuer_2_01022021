@@ -277,10 +277,12 @@ section {
 .description {
     display: flex;
     flex-direction: column;
-    padding-left: 6%;
-    padding-top: 3%;
+    position: relative;
+    padding-left: 20px;
+    padding-top: 10px;
     text-decoration: none;
     color: black;
+    width: 58%;
 }
 
 .description p {
@@ -292,8 +294,8 @@ section {
     font-size: 1.2rem;
     color: var(--primary_blue);
     display: flex;
-    margin-top: auto;
-    margin-bottom: 10px;
+    position: absolute;
+    bottom: 10px;
 }
 
 .stars i {
