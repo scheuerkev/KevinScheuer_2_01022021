@@ -37,6 +37,7 @@ h2 {
 h3 {
     font-size: 1.6rem;
 }
+
 /*\\\MOBILE_STYLE///*/
 /*HEADER*/
 #logo {
@@ -254,12 +255,20 @@ section {
     padding-bottom: 20px;
 }
 
+.popular-title h1 {
+    padding: 0;
+}
+
+.card-home figcaption {
+    width: 100%;
+}
+
 .card {
     position: relative;
     box-shadow: 0 1px 20px var(--secondary_gray);
     background-color: #fff;
-    border-radius: 19px;
-    margin-bottom: 10px;
+    border-radius: 20px;
+    margin-bottom: 15px;
     padding: 5px;
     display: flex;
     flex-direction: row;
@@ -286,7 +295,7 @@ section {
 }
 
 .description p {
-    font-size: 1.5rem;
+    font-size: 1.3rem;
 }
 
 .stars {
@@ -311,13 +320,15 @@ section {
 }
 
 .card-home .stars {
-    padding-top: 5px;
+    padding: 10px 0px 5px 0;
+    position: initial;
 }
+
 .card2 {
     box-shadow: 0 1px 20px var(--secondary_gray);
     background-color: #fff;
-    border-radius: 35px;
-    margin-bottom: 10px;
+    border-radius: 20px;
+    margin-bottom: 15px;
     padding: 5px;
     display: flex;
     flex-direction: column;
@@ -326,7 +337,7 @@ section {
 
 .card2-img {
     width: 100%;
-    border-radius: 30px 30px 0 0;
+    border-radius: 15px 15px 0 0;
     height: 110px;
     object-fit: cover;
     max-width: 100%;
@@ -340,17 +351,20 @@ section {
     color: #000;
 }
 
+
+aside {
+    padding: 10px 30px 30px 30px;
+}
+
 aside h1 {
     padding-bottom: 20px;
 }
- aside {
-     padding: 30px;
- }
+
 aside figure {
     box-shadow: 0 1px 10px var(--secondary_gray);
     background-color: #fff;
-    border-radius: 35px;
-    margin-bottom: 10px;
+    border-radius: 20px;
+    margin-bottom: 15px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -358,7 +372,7 @@ aside figure {
 
 aside figure img {
     width: 100%;
-    border-radius: 30px 30px 0 0;
+    border-radius: 20px 20px 0 0;
     height: 110px;
     object-fit: cover;
     max-width: 100%;
@@ -366,35 +380,36 @@ aside figure img {
 }
 
 aside figcaption {
-    font-family: "Raleway Bold", sans-serif;
-    padding: 6%;
-    font-size: 1rem;
-    color: black;
+    padding: 15px 20px;
+    color: #000;
 }
 
 footer {
     background-color: var(--primary_gray);
-    padding-left: 1rem;
+    padding-left: 30px;
 }
 
 footer a:hover {
     color: var(--primary_blue);
 }
 
-.footer-title {
-    font-family: "Raleway Bold", sans-serif;
+footer h3:first-child {
+    padding-top: 40px;
+}
+
+footer h3 {
+    padding-top: 20px;
+}
+
+footer a {
     font-size: 1.4rem;
-    padding-top: 10%;
 }
 
 footer li {
-    line-height: 2;
+    line-height: 2.4;
 }
 
-footer li:first-child {
-    padding-top: 5%;
-}
-
-.last-item {
-    padding-bottom: 10%;
+footer ul:last-child {
+    padding-bottom: 40px;
+    margin-block-end: 0;
 }
