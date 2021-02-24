@@ -239,12 +239,14 @@ article {
 }
 
 section {
-    padding: 30px;
+    padding: 25px;
+    display: grid;
+    grid-gap: 15px;
 }
 
 .popular {
     background-color: var(--primary_gray);
-    padding: 30px;
+    padding: 25px;
 }
 
 .popular-title {
@@ -268,7 +270,6 @@ section {
     box-shadow: 0 1px 20px var(--secondary_gray);
     background-color: #fff;
     border-radius: 20px;
-    margin-bottom: 15px;
     padding: 5px;
     display: flex;
     flex-direction: row;
@@ -328,7 +329,6 @@ section {
     box-shadow: 0 1px 20px var(--secondary_gray);
     background-color: #fff;
     border-radius: 20px;
-    margin-bottom: 15px;
     padding: 5px;
     display: flex;
     flex-direction: column;
@@ -353,7 +353,9 @@ section {
 
 
 aside {
-    padding: 10px 30px 30px 30px;
+    padding: 10px 25px 25px 25px;
+    display: grid;
+    grid-gap: 15px;
 }
 
 aside h1 {
@@ -364,7 +366,6 @@ aside figure {
     box-shadow: 0 1px 10px var(--secondary_gray);
     background-color: #fff;
     border-radius: 20px;
-    margin-bottom: 15px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -386,7 +387,7 @@ aside figcaption {
 
 footer {
     background-color: var(--primary_gray);
-    padding-left: 30px;
+    padding-left: 25px;
 }
 
 footer a:hover {

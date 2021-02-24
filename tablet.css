@@ -1,0 +1,98 @@
+:root {
+    font-size: 12px;
+}
+
+/*\\\TABLET_STYLE///*/
+/*HEADER*/
+#logo {
+    width: 50%;
+}
+
+nav ul {
+    grid-template-rows: 140px;
+}
+
+nav li:first-child {
+    padding-left: 35px;
+}
+
+.sign-in {
+    padding-right: 35px;
+}
+
+header h1 {
+    padding: 15px 35px 0;
+    line-height: 1.5;
+}
+
+.slug {
+    padding: 10px 35px;
+}
+
+form {
+    padding: 15px 35px 35px 35px;
+}
+
+#search-bar input {
+    width: calc(60% - 70px);
+}
+
+.search-button {
+    width: 60px;
+}
+
+.gps-locator {
+    width: 60px;
+}
+
+.popular-title {
+    grid-column: 1/3;
+}
+
+.popular {
+    grid-template-columns: 1fr 1fr;
+}
+
+.description {
+    padding-left: 7px;
+    padding-top: 0;
+}
+
+.description h3{
+    font-size: 1.2rem;
+}
+
+.description p{
+    font-size: 1rem;
+}
+
+.stars {
+    bottom: 5px;
+    font-size: 1rem;
+}
+
+section {
+    grid-gap: 20px;
+    padding: 35px;
+}
+
+.card-home {
+    grid-template-columns: 1fr 1fr;
+}
+
+.card-home h1 {
+    grid-column: 1/3;
+}
+
+aside {
+    padding: 10px 35px 35px 35px;
+    grid-template-columns: 1fr 1fr;
+}
+
+aside h1 {
+    grid-column: 1/3;
+}
+
+footer {
+    padding-left: 35px;
+}
