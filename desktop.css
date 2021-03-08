@@ -2,6 +2,31 @@
     font-size: 14px;
 }
 
+header {
+    padding: 50px;
+    padding-bottom: 0;
+}
+
+nav li:first-child{
+    padding: 0;
+}
+
+header h1 {
+    padding: 15px 0 0;
+}
+
+.slug {
+    padding: 10px 0;
+}
+
+#logo {
+    width: 130px;
+}
+
+form {
+    padding: 15px 0px 35px 0px;
+}
+
 #search-bar input {
     width: calc(50% - 70px);
 }
@@ -13,6 +38,10 @@
 
 .search-button i {
     display: none;
+}
+
+section header {
+    padding: 0;
 }
 
 .search-text {
@@ -54,3 +83,69 @@ nav li:nth-child(3) a:hover {
     border-top: 4px solid var(--primary_blue);
 }
 
+#filters button {
+    margin-right: 30px;
+}
+
+article {
+    display: grid;
+    grid-template-columns: 4fr 2fr ;
+    grid-gap: 50px;
+}
+
+section {
+    grid-gap: 30px;
+    padding: 40px;
+}
+
+.card-home {
+    background-color: var(--primary_gray);
+    border-radius: 20px;
+    grid-template-rows: 40px 1fr 1fr 30px;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin-left: 50px;
+}
+
+.card-home h1 {
+    grid-row: 1/2;
+    grid-column: 1/4;
+}
+
+
+.popular {
+    border-radius: 20px;
+    padding: 40px;
+    grid-template-rows: 40px 1fr 1fr 1fr;
+    margin-right: 50px;
+}
+
+.popular-title {
+    padding-bottom: 0;
+}
+
+aside {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 40px 1fr 1fr;
+    padding: 50px;
+    grid-gap: 50px
+}
+
+aside h1 {
+    grid-column: 1/5;
+    grid-row: 1/2;
+}
+
+aside a:first-child {
+    grid-row: 2/4;
+}
+
+footer {
+    padding: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+footer h3:first-child {
+    padding-top: 0;
+}

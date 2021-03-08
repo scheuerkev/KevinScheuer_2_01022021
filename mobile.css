@@ -407,6 +407,7 @@ footer h3 {
 
 footer a {
     font-size: 1.4rem;
+    color: inherit;
 }
 
 footer li {
