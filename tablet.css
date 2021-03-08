@@ -45,25 +45,9 @@ form {
     width: 60px;
 }
 
-.popular-title {
-    grid-column: 1/3;
-}
-
-.popular {
-    grid-template-columns: 1fr 1fr;
-}
-
 .description {
-    padding-left: 7px;
-    padding-top: 0;
-}
-
-.description h3{
-    font-size: 1.2rem;
-}
-
-.description p{
-    font-size: 1rem;
+    padding-left: 10px;
+    padding-top: 10px;
 }
 
 .stars {

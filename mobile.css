@@ -38,16 +38,16 @@ h3 {
     font-size: 1.6rem;
 }
 
+strong {
+    font-weight: bold;
+}
+
 /*\\\MOBILE_STYLE///*/
 /*HEADER*/
 #logo {
     width: 60%;
     max-width: 100%;
     display: block;
-}
-
-strong {
-    font-weight: bold;
 }
 
 nav ul {
@@ -61,6 +61,10 @@ nav ul {
 nav li:first-child {
     text-align: left;
     padding-left: 25px;
+}
+
+nav li {
+    text-align: center;
 }
 
 nav li:nth-child(2) a {
@@ -77,10 +81,6 @@ nav li:nth-child(3) a {
     line-height: 50px;
     height: 50px;
     border-bottom: 4px solid var(--primary_gray);
-}
-
-nav li {
-    text-align: center;
 }
 
 nav li:nth-child(2) a:hover {
@@ -172,6 +172,9 @@ form {
     margin: auto;
 }
 
+.search-text {
+    display: none;
+}
 /*FILTERS BUTTONS*/
 form button {
     font-family: 'Raleway Bold', sans-serif;
