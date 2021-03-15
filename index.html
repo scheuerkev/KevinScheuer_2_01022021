@@ -17,24 +17,24 @@
 <!--HEADER-->
 <header>
     <nav>
-        <ul>
-            <li><a href="index.html"><img id="logo" src="images/logo/Reservia@3x.png" alt="Logo de Reservia"/></a></li>
-            <li class="places"><a href="#">Hébergements</a></li>
-            <li class="activities"><a href="#">Activités</a></li>
-            <li class="sign-in"><a href="#">S'inscrire</a></li>
+        <ul class="main-nav">
+            <li class="main-nav__logo"><a href="index.html" target="_blank"><img src="images/logo/Reservia@3x.png" alt="Logo de Reservia"/></a></li>
+            <li class="main-nav__places"><a href="#" target="_blank">Hébergements</a></li>
+            <li class="main-nav__activities"><a href="#" target="_blank">Activités</a></li>
+            <li class="main-nav__sign-in"><a href="#" target="_blank">S'inscrire</a></li>
         </ul>
     </nav>
-    <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
-    <p class="slug">En plein centre ville ou en pleine nature</p>
-    <form method="post">
-        <div id="search-bar">
-            <label class="gps-locator">
+    <h1 class="slogan">Trouvez votre hébergement pour des vacances de rêve</h1>
+    <p class="slogan-small">En plein centre ville ou en pleine nature</p>
+    <form class="search-form" method="post">
+        <div class="search-form__bar">
+            <label class="search-form__bar--gps">
                 <i class="fas fa-map-marker-alt"></i>
             </label>
-            <input type="text" value="Marseille, France"/>
-            <button class="search-button">
-                <p class="search-text">Rechercher</p>
-                <i class="fas fa-search"></i>
+            <input class="search-form__bar--input" type="text" value="Marseille, France"/>
+            <button class="search-form__bar--btn">
+                <p class="search-form__bar--btn-txt">Rechercher</p>
+                <i class="search-form__bar--btn-glass fas fa-search"></i>
             </button>
         </div>
         <div id="filters">
@@ -226,8 +226,8 @@
         </section>
     </article>
     <aside>
-        <h1>Activités à Marseille</h1>
-        <a href="#" target="_blank">
+        <h1 class="aside__title">Activités à Marseille</h1>
+        <a class="aside__elmt1" href="#" target="_blank">
             <figure>
                 <img src="images/activites/3_medium/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg"
                      alt="Le Vieux Port"/>
@@ -237,7 +237,7 @@
             </figure>
         </a>
 
-        <a href="#" target="_blank">
+        <a class="aside__elmt2" href="#" target="_blank">
             <figure>
                 <img src="images/activites/3_medium/paul-hermann-QFTrLdQIRhI-unsplash.jpg"
                      alt="Fort de Pomègues"/>
@@ -247,7 +247,7 @@
             </figure>
         </a>
 
-        <a href="#" target="_blank">
+        <a class="aside__elmt3" href="#" target="_blank">
             <figure>
                 <img src="images/activites/3_medium/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg"
                      alt="Îles du Frioul"/>
@@ -257,7 +257,7 @@
             </figure>
         </a>
 
-        <a href="#" target="_blank">
+        <a class="aside__elmt4" href="#" target="_blank">
             <figure>
                 <img src="images/activites/3_medium/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg"
                      alt="Parc des Calanques"/>
@@ -267,7 +267,7 @@
             </figure>
         </a>
 
-        <a href="#" target="_blank">
+        <a class="aside__elmt5" href="#" target="_blank">
             <figure>
                 <img src="images/activites/3_medium/florian-wehde-xW9e8gdotxI-unsplash.jpg"
                      alt="Notre-Dame-de-la-Garde"/>
@@ -277,7 +277,7 @@
             </figure>
         </a>
 
-        <a href="#" target="_blank">
+        <a class="aside__elmt6" href="#" target="_blank">
             <figure>
                 <img src="images/activites/3_medium/lena-paulin-wH2-EJoDcV0-unsplash.jpg"
                      alt="Parc Longchamp"/>
@@ -291,26 +291,26 @@
 <!--FOOTER-->
 <footer>
     <div class="about">
-    <h3>À propos</h3>
-    <ul>
-        <li><a href="#" target="_blank">Fonctionnement du site</a></li>
-        <li><a href="#" target="_blank">Conditions générales de vente</a></li>
-        <li><a href="#" target="_blank">Données et confidentialité</a></li>
-    </ul>
+        <h3>À propos</h3>
+        <ul>
+            <li><a href="#" target="_blank">Fonctionnement du site</a></li>
+            <li><a href="#" target="_blank">Conditions générales de vente</a></li>
+            <li><a href="#" target="_blank">Données et confidentialité</a></li>
+        </ul>
     </div>
     <div class="places">
-    <h3>Nos hébergements</h3>
-    <ul>
-        <li><a href="#" target="_blank">Charte qualité</a></li>
-        <li><a href="#" target="_blank">Soumettre votre hôtel</a></li>
-    </ul>
+        <h3>Nos hébergements</h3>
+        <ul>
+            <li><a href="#" target="_blank">Charte qualité</a></li>
+            <li><a href="#" target="_blank">Soumettre votre hôtel</a></li>
+        </ul>
     </div>
     <div class="help">
-    <h3>Assistance</h3>
-    <ul>
-        <li><a href="#" target="_blank">Centre d'aide</a></li>
-        <li><a href="#" target="_blank">Nous contacter</a></li>
-    </ul>
+        <h3>Assistance</h3>
+        <ul>
+            <li><a href="#" target="_blank">Centre d'aide</a></li>
+            <li><a href="#" target="_blank">Nous contacter</a></li>
+        </ul>
     </div>
 </footer>
 </body>

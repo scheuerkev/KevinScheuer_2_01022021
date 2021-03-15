@@ -1,50 +1,84 @@
+/*\\\GENERAL///*/
 :root {
-    font-size: 14px;
+    font-size: 13px;
 }
 
+/*\\\DESKTOP_STYLE///*/
+/*HEADER*/
 header {
-    padding: 50px;
-    padding-bottom: 0;
+    padding: 0 20px;
 }
 
-nav li:first-child{
+.main-nav {
+    grid-template-columns: 4fr 1fr 1fr 1fr;
+    grid-template-rows: 100px;
+    margin-top: 0;
+    grid-gap: 40px;
+}
+
+
+.main-nav a {
+    line-height: 100px;
+    padding-top: 4px;
+}
+
+.main-nav a:hover {
+}
+
+.main-nav__logo {
     padding: 0;
+    height: inherit;
+    line-height: inherit;
 }
 
-header h1 {
+.main-nav__logo img {
+    height: 100px;
+    width: auto;
+}
+
+.main-nav__places, .main-nav__activities {
+    padding: 0;
+    height: inherit;
+    line-height: inherit;
+}
+
+.main-nav__places a, .main-nav__activities a {
+    border-bottom: none;
+}
+
+.main-nav__places a:hover, .main-nav__activities a:hover {
+    border-bottom: none;
+    padding-top: 0;
+    border-top: 4px solid var(--primary_blue);
+}
+
+.main-nav__sign-in {
+    grid-column: 4/5;
+}
+
+.slogan {
     padding: 15px 0 0;
 }
 
-.slug {
+.slogan-small {
     padding: 10px 0;
 }
 
-#logo {
-    width: 130px;
-}
-
-form {
+/*FORM*/
+.search-form {
     padding: 15px 0px 35px 0px;
 }
 
-#search-bar input {
+.search-form__bar--input {
     width: calc(50% - 70px);
 }
 
-.search-button {
+.search-form__bar--btn {
     width: 140px;
     border-radius: 0 20px 20px 0;
 }
 
-.search-button i {
-    display: none;
-}
-
-section header {
-    padding: 0;
-}
-
-.search-text {
+.search-form__bar--btn-txt {
     color: #fff;
     font-size: 1.2rem;
     display: initial;
@@ -52,35 +86,16 @@ section header {
     padding-right: 15px;
 }
 
-nav ul {
-    grid-template-columns: 4fr 1fr 1fr 1fr;
-    margin-top: 0;
-
-
-}
-.sign-in {
-    grid-column: 4/5;
+.search-form__bar--btn-glass {
+    display: none;
 }
 
-
-nav li:nth-child(2) a {
-    padding-right: 40px;
-    border-bottom: none;
+section header {
+    padding: 0;
 }
 
-nav li:nth-child(3) a {
-    padding-right: 40px;
-    border-bottom: none;
-}
-
-nav li:nth-child(2) a:hover {
-    border-bottom: none;
-    border-top: 4px solid var(--primary_blue);
-}
-
-nav li:nth-child(3) a:hover {
-    border-bottom: none;
-    border-top: 4px solid var(--primary_blue);
+.load-more {
+    padding: 0;
 }
 
 #filters button {
@@ -89,21 +104,29 @@ nav li:nth-child(3) a:hover {
 
 article {
     display: grid;
-    grid-template-columns: 4fr 2fr ;
-    grid-gap: 50px;
+    grid-template-columns: 4fr 2fr;
+    padding: 20px;
+    grid-gap: 20px;
+}
+
+.description h3 {
+    font-size: 1.4rem;
 }
 
 section {
-    grid-gap: 30px;
-    padding: 40px;
+    grid-gap: 20px;
+    padding: 20px;
 }
 
 .card-home {
     background-color: var(--primary_gray);
     border-radius: 20px;
-    grid-template-rows: 40px 1fr 1fr 30px;
+    grid-template-rows: 40px 250px 250px 40px;
     grid-template-columns: 1fr 1fr 1fr;
-    margin-left: 50px;
+}
+
+.card2 {
+
 }
 
 .card-home h1 {
@@ -114,9 +137,8 @@ section {
 
 .popular {
     border-radius: 20px;
-    padding: 40px;
-    grid-template-rows: 40px 1fr 1fr 1fr;
-    margin-right: 50px;
+    padding: 20px;
+    grid-template-rows: 40px repeat(3, 150px);
 }
 
 .popular-title {
@@ -124,28 +146,63 @@ section {
 }
 
 aside {
+    padding: 20px;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: 40px 1fr 1fr;
-    padding: 50px;
-    grid-gap: 50px
+    grid-template-rows: 40px repeat(5, 100px);
+    gap: 20px 20px;
+    grid-template-areas:
+    "TT TT TT TT"
+    "VP FP PNC NDG"
+    "VP FP PNC NDG "
+    "VP FP PNC PL"
+    "VP IF PNC PL"
+    "VP IF PNC PL"
+    ;
 }
 
-aside h1 {
-    grid-column: 1/5;
-    grid-row: 1/2;
+.aside__title {
+    grid-area: TT;
 }
 
-aside a:first-child {
-    grid-row: 2/4;
+.aside__elmt1 {
+    grid-area: VP;
+}
+
+.aside__elmt2 {
+    grid-area: FP;
+}
+
+.aside__elmt3 {
+    grid-area: IF;
+}
+
+.aside__elmt4 {
+    grid-area: PNC;
+}
+
+.aside__elmt5 {
+    grid-area: NDG;
+}
+
+.aside__elmt6 {
+    grid-area: PL;
+}
+
+aside figure {
+    height: 100%;
+}
+
+aside figure img {
+    height: calc(100% - 50px);
 }
 
 footer {
-    padding: 50px;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+    padding: 40px 20px 40px 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
 }
 
 footer h3:first-child {
     padding-top: 0;
 }
+

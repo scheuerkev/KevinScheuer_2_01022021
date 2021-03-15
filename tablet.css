@@ -1,49 +1,53 @@
+/*\\\GENERAL///*/
 :root {
     font-size: 12px;
 }
 
 /*\\\TABLET_STYLE///*/
 /*HEADER*/
-#logo {
-    width: 50%;
-}
-
-nav ul {
+.main-nav {
     grid-template-rows: 140px;
 }
 
-nav li:first-child {
+.main-nav__logo {
     padding-left: 35px;
 }
 
-.sign-in {
+.main-nav__logo img {
+    width: 50%;
+}
+
+.main-nav__sign-in {
     padding-right: 35px;
 }
 
-header h1 {
+.slogan {
     padding: 15px 35px 0;
     line-height: 1.5;
 }
 
-.slug {
+.slogan-small {
     padding: 10px 35px;
 }
 
-form {
+/*FORM*/
+.search-form {
     padding: 15px 35px 35px 35px;
 }
 
-#search-bar input {
+.search-form__bar--gps{
+    width: 60px;
+}
+
+.search-form__bar--input {
     width: calc(60% - 70px);
+    min-width: 65%;
 }
 
-.search-button {
+.search-form__bar--btn {
     width: 60px;
 }
 
-.gps-locator {
-    width: 60px;
-}
 
 .description {
     padding-left: 10px;

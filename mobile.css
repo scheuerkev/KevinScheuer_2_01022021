@@ -9,7 +9,7 @@
     src: url('fonts/Raleway/static/Raleway-Bold.ttf') format('truetype');
 }
 
-/*\\\DOM///*/
+/*\\\GENERAL///*/
 :root {
     font-size: 10px;
     --primary_blue: #106FFC;
@@ -44,13 +44,7 @@ strong {
 
 /*\\\MOBILE_STYLE///*/
 /*HEADER*/
-#logo {
-    width: 60%;
-    max-width: 100%;
-    display: block;
-}
-
-nav ul {
+.main-nav {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 70px;
@@ -58,16 +52,35 @@ nav ul {
     font-size: 1.7rem;
 }
 
-nav li:first-child {
+.main-nav li {
+    height: 100%;
+    text-align: center;
+}
+
+.main-nav a {
+    text-decoration: none;
+    font-weight: 600;
+    color: #000;
+    display: block;
+    height: 100%;
+}
+
+.main-nav a:hover {
+    color: var(--primary_blue);
+}
+
+.main-nav__logo {
     text-align: left;
     padding-left: 25px;
 }
 
-nav li {
-    text-align: center;
+.main-nav__logo img {
+    width: 60%;
+    max-width: 100%;
+    display: block;
 }
 
-nav li:nth-child(2) a {
+.main-nav__places a, .main-nav__activities a {
     display: block;
     width: 100%;
     line-height: 50px;
@@ -75,65 +88,43 @@ nav li:nth-child(2) a {
     border-bottom: 4px solid var(--primary_gray);
 }
 
-nav li:nth-child(3) a {
-    display: block;
-    width: 100%;
-    line-height: 50px;
-    height: 50px;
-    border-bottom: 4px solid var(--primary_gray);
-}
-
-nav li:nth-child(2) a:hover {
+.main-nav__places a:hover, .main-nav__activities a:hover {
     border-bottom: 4px solid var(--primary_blue);
 }
 
-nav li:nth-child(3) a:hover {
-    border-bottom: 4px solid var(--primary_blue);
-}
-
-.sign-in {
+.main-nav__sign-in {
     grid-column: 2/3;
     grid-row: 1/2;
-    text-align: right;
+    text-align: right !important;
     padding-right: 25px;
     font-family: "Raleway Bold", sans-serif;
 }
 
-.sign-in a {
+.main-nav__sign-in a {
     color: var(--primary_blue);
 }
 
-nav a {
-    text-decoration: none;
-    font-weight: 600;
-    color: #000;
-}
-
-nav a:hover {
-    color: var(--primary_blue);
-}
-
-header h1 {
+.slogan {
     padding: 15px 25px 0;
     line-height: 1.3;
 }
 
-.slug {
+.slogan-small {
     font-size: 1.65rem;
     font-weight: 500;
     padding: 10px 25px;
 }
 
 /*FORM*/
-form {
+.search-form {
     padding: 25px;
 }
 
-#search-bar {
+.search-form__bar {
     display: flex;
 }
 
-#search-bar input {
+.search-form__bar--input {
     border: 1px solid var(--primary_gray);
     font-family: "Raleway Bold", sans-serif;
     font-size: 1.8rem;
@@ -144,12 +135,12 @@ form {
     width: calc(100% - 50px);
 }
 
-#search-bar i {
+.search-form__bar i {
     font-size: 2.2rem;
     margin: auto;
 }
 
-.gps-locator {
+.search-form__bar--gps {
     background-color: var(--primary_gray);
     border: 1px solid var(--primary_gray);
     width: 70px;
@@ -158,7 +149,7 @@ form {
     display: flex;
 }
 
-.search-button {
+.search-form__bar--btn {
     width: 70px;
     height: 60px;
     background-color: var(--primary_blue);
@@ -167,16 +158,22 @@ form {
     margin-left: -25px;
 }
 
-.search-button i {
+.search-form__bar--btn:hover {
+    cursor: pointer;
+    opacity: 0.85;
+}
+
+.search-form__bar--btn i {
     color: #fff;
     margin: auto;
 }
 
-.search-text {
+.search-form__bar--btn-txt {
     display: none;
 }
+
 /*FILTERS BUTTONS*/
-form button {
+#filters button {
     font-family: 'Raleway Bold', sans-serif;
     background-color: #fff;
     border: 2px solid var(--secondary_gray);
@@ -275,7 +272,6 @@ section {
     border-radius: 20px;
     padding: 5px;
     display: flex;
-    flex-direction: row;
 }
 
 .card-img {
@@ -288,13 +284,9 @@ section {
 }
 
 .description {
-    display: flex;
-    flex-direction: column;
     position: relative;
-    padding-left: 20px;
-    padding-top: 10px;
-    text-decoration: none;
-    color: black;
+    padding: 10px;
+    color: #111;
     width: 58%;
 }
 
@@ -333,9 +325,7 @@ section {
     background-color: #fff;
     border-radius: 20px;
     padding: 5px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+    height: 100%;
 }
 
 .card2-img {
@@ -343,8 +333,6 @@ section {
     border-radius: 15px 15px 0 0;
     height: 110px;
     object-fit: cover;
-    max-width: 100%;
-    max-height: 100%;
 }
 
 .load-more {
@@ -384,8 +372,10 @@ aside figure img {
 }
 
 aside figcaption {
-    padding: 15px 20px;
+    padding: 0px 20px;
     color: #000;
+    height: 50px;
+    line-height: 50px;
 }
 
 footer {
