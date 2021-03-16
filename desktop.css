@@ -19,10 +19,8 @@ header {
 
 .main-nav a {
     line-height: 100px;
+    height: 100px;
     padding-top: 4px;
-}
-
-.main-nav a:hover {
 }
 
 .main-nav__logo {
@@ -94,13 +92,12 @@ section header {
     padding: 0;
 }
 
-.load-more {
-    padding: 0;
-}
 
-#filters button {
+
+.search-filters button {
     margin-right: 30px;
 }
+
 
 article {
     display: grid;
@@ -113,39 +110,38 @@ article {
     font-size: 1.4rem;
 }
 
+.load-more {
+    padding: 0;
+}
+
 section {
     grid-gap: 20px;
     padding: 20px;
 }
 
-.card-home {
+.accomodation-cards {
     background-color: var(--primary_gray);
     border-radius: 20px;
     grid-template-rows: 40px 250px 250px 40px;
     grid-template-columns: 1fr 1fr 1fr;
 }
 
-.card2 {
-
-}
-
-.card-home h1 {
+.accomodation-cards h1 {
     grid-row: 1/2;
     grid-column: 1/4;
 }
 
-
-.popular {
+.popular-cards {
     border-radius: 20px;
     padding: 20px;
     grid-template-rows: 40px repeat(3, 150px);
 }
 
-.popular-title {
+.popular-cards__title {
     padding-bottom: 0;
 }
 
-aside {
+.activities-cards {
     padding: 20px;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: 40px repeat(5, 100px);
@@ -160,42 +156,43 @@ aside {
     ;
 }
 
-.aside__title {
+.activities-cards h1 {
     grid-area: TT;
 }
 
-.aside__elmt1 {
+.activities-cards__elmt1 {
     grid-area: VP;
 }
 
-.aside__elmt2 {
+.activities-cards__elmt2 {
     grid-area: FP;
 }
 
-.aside__elmt3 {
+.activities-cards__elmt3 {
     grid-area: IF;
 }
 
-.aside__elmt4 {
+.activities-cards__elmt4 {
     grid-area: PNC;
 }
 
-.aside__elmt5 {
+.activities-cards__elmt5 {
     grid-area: NDG;
 }
 
-.aside__elmt6 {
+.activities-cards__elmt6 {
     grid-area: PL;
 }
 
-aside figure {
+.activities-cards figure {
     height: 100%;
 }
 
-aside figure img {
+.activities-cards figure img {
     height: calc(100% - 50px);
 }
-
+/*END__MAIN*/
+/*FOOTER*/
 footer {
     padding: 40px 20px 40px 20px;
     display: grid;
@@ -205,4 +202,4 @@ footer {
 footer h3:first-child {
     padding-top: 0;
 }
-
+/*END__FOOTER*/
