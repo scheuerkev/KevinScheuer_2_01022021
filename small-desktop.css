@@ -1,0 +1,24 @@
+.accomodation-cards h3, .popular-cards h3, .activities-cards h3 {
+    font-size: 1.1rem;
+}
+
+.activities-cards__elmt5 h3 {
+    font-size: 0.8rem;
+}
+
+.activities-cards__elmt4 h3 {
+    font-size: 1rem;
+}
+
+/*.popular-cards__title {
+    font-size: 1.6rem;
+}
+
+.popular-cards__title h2 {
+    font-size: 1.6rem;
+}*/
+
+.accomodation-cards__description p, .popular-cards__description p {
+    font-size: 0.9rem;
+}
+

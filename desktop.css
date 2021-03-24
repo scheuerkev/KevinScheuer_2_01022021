@@ -92,12 +92,9 @@ section header {
     padding: 0;
 }
 
-
-
 .search-filters button {
     margin-right: 30px;
 }
-
 
 article {
     display: grid;
@@ -126,9 +123,17 @@ section {
     grid-template-columns: 1fr 1fr 1fr;
 }
 
-.accomodation-cards h1 {
+.accomodation-cards h2 {
     grid-row: 1/2;
     grid-column: 1/4;
+}
+
+.accomodation-cards h3, .popular-cards h3, .activities-cards h3 {
+    font-size: 1.4rem;
+}
+
+.accomodation-cards__description p, .popular-cards__description p {
+    font-size: 1.2rem;
 }
 
 .popular-cards {
@@ -152,11 +157,10 @@ section {
     "VP FP PNC NDG "
     "VP FP PNC PL"
     "VP IF PNC PL"
-    "VP IF PNC PL"
-    ;
+    "VP IF PNC PL";
 }
 
-.activities-cards h1 {
+.activities-cards h2 {
     grid-area: TT;
 }
 
@@ -184,6 +188,10 @@ section {
     grid-area: PL;
 }
 
+.activities-cards__elmt5 h3 {
+    font-size: 1.2rem;
+}
+
 .activities-cards figure {
     height: 100%;
 }
@@ -191,6 +199,12 @@ section {
 .activities-cards figure img {
     height: calc(100% - 50px);
 }
+
+.activities-cards figcaption {
+    height: 50px;
+    line-height: 50px;
+}
+
 /*END__MAIN*/
 /*FOOTER*/
 footer {
@@ -202,4 +216,5 @@ footer {
 footer h3:first-child {
     padding-top: 0;
 }
+
 /*END__FOOTER*/
