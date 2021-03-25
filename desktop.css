@@ -67,6 +67,10 @@ header {
     padding: 15px 0px 35px 0px;
 }
 
+.search-form__bar i {
+    font-size: 1.9rem;
+}
+
 .search-form__bar--input {
     width: calc(50% - 70px);
 }

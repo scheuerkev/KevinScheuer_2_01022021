@@ -48,6 +48,13 @@
     width: 60px;
 }
 
+.popular-cards h3 {
+    font-size: 1.4rem;
+}
+
+.popular-cards p {
+    font-size: 1.2rem;
+}
 
 .accomodation-cards__description, .popular-cards__description {
     padding-left: 10px;
@@ -73,6 +80,22 @@ section {
     grid-column: 1/3;
 }
 
+.accomodation-cards h3, .activities-cards h3 {
+    font-size: 1.2rem;
+}
+
+.accomodation-cards p {
+    font-size: 1rem;
+}
+
+/*.accomodation-cards:first-child h3 {
+    font-size: 0.9rem;
+}
+
+.accomodation-cards:first-child p {
+    font-size: 0.8rem;
+}*/
+
 .activities-cards {
     padding: 10px 35px 35px 35px;
     grid-template-columns: 1fr 1fr;
@@ -83,6 +106,13 @@ section {
     grid-column: 1/3;
 }
 
+.activities-cards__elmt4 h3 {
+    font-size: 1.15rem;
+}
+
+.activities-cards__elmt5 h3 {
+    font-size: 0.85rem;
+}
 /*END__MAIN*/
 /*FOOTER*/
 footer {

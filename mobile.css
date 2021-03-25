@@ -230,7 +230,7 @@ strong {
     max-height: 25px;
     min-width: 25px;
     min-height: 25px;
-    line-height: 25px;
+    line-height: 22px;
     border-radius: 50%;
     text-align: center;
     border: 1px solid var(--secondary_gray);
@@ -260,7 +260,7 @@ section {
 
 /*__ACCOMODATION-CARDS__*/
 .accomodation-cards {
-    grid-template-rows: 40px repeat(6, 220px);
+    grid-template-rows: 40px repeat(6, 210px);
 }
 
 .accomodation-cards h2 {
@@ -269,7 +269,7 @@ section {
 
 .accomodation-cards .stars {
     padding: 10px 0px 5px 0;
-    bottom: 5px;
+    bottom: 0px;
 }
 
 .accomodation-cards figure {
@@ -283,7 +283,7 @@ section {
 .accomodation-cards img {
     width: 100%;
     border-radius: 15px 15px 0 0;
-    height: calc(100% - 110px);
+    height: calc(100% - 80px);
     object-fit: cover;
 }
 
@@ -292,7 +292,7 @@ section {
     padding: 10px;
     color: #111;
     width: 100%;
-    height: 110px;
+    height: 80px;
 }
 
 .accomodation-cards__description p {
@@ -385,7 +385,7 @@ section {
     padding: 10px 25px 25px 25px;
     display: grid;
     grid-gap: 15px;
-    grid-template-rows: 40px repeat(6, 220px);
+    grid-template-rows: 40px repeat(6, 210px);
 }
 
 .activities-cards figure {
