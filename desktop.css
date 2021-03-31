@@ -21,17 +21,20 @@ header {
     line-height: 100px;
     height: 100px;
     padding-top: 4px;
+    position: relative;
 }
 
 .main-nav__logo {
     padding: 0;
-    height: inherit;
     line-height: inherit;
 }
 
 .main-nav__logo img {
-    height: 100px;
+    height: 65px;
     width: auto;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
 }
 
 .main-nav__places, .main-nav__activities {
